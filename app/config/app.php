@@ -114,7 +114,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
-    	'Mrjuliuss\Syntara\SyntaraServiceProvider'
+    	'Mrjuliuss\Syntara\SyntaraServiceProvider',
+   		'anlutro\cURL\Laravel\cURLServiceProvider',
 
 	),
 
@@ -180,7 +181,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry'
+		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'cURL'        	  => 'anlutro\cURL\Laravel\cURL'
 
 	),
 

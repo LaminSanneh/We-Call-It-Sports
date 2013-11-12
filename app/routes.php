@@ -13,5 +13,12 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return 'Home Controller';
 });
+
+Route::get("api/admin/getSportCompetitions/{sport_id}", 'WeCallItSports\Api\Controllers\AdminController@getSportCompetitions');
+Route::post("api/admin/uploadArticleImage", array('as' => 'uploadArticleImage', 'uses' => 'WeCallItSports\Api\Controllers\AdminController@uploadArticleImage'));
+Route::resource('admin/articles', 'WeCallItSports\Admin\Controllers\ArticleController');
+
+Route::get('football/home', array('as' => 'footballHome', 'uses' => 'WeCallItSports\Football\Controllers\FootballController@index'));
+Route::get('football/articles/{id}-{title}', array('as' => 'footballArticle','uses' => 'WeCallItSports\Football\Controllers\FootballController@showArticle'));

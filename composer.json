@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.0.*",
-		"mrjuliuss/syntara": "1.*"
+		"mrjuliuss/syntara": "1.*",
+		"anlutro/curl": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -15,7 +16,10 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
-		]
+		],
+		"psr-0":{
+			"WeCallItSports" : "app/"
+		}
 	},
 	"scripts": {
 		"post-install-cmd": [
