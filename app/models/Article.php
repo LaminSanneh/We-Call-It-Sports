@@ -13,14 +13,14 @@ class Article extends Eloquent
 	}
 
 	public function competition(){
-		$this->belongsTo('Competition');
+		return $this->belongsTo('Competition');
 	}
 
 	public function images(){
-		$this->hasMany('Image');
+		return $this->hasMany('Image');
 	}
 
 	public function status(){
-		$this->hasOne('ArticleStatus');
+		return $this->hasOne('ArticleStatus');
 	}	
 }
